@@ -328,7 +328,7 @@ int error;
    fake varargs -- need to do this way because we wind up calling through
    more levels of indirection than vanilla varargs can handle, and not all
    machines have vfprintf/vsyslog/whatever!  6 params oughta be enough. */
-static void holler (str, p1, p2, p3, p4, p5, p6)
+void holler (str, p1, p2, p3, p4, p5, p6)
   char * str;
   char * p1, * p2, * p3, * p4, * p5, * p6;
 {
